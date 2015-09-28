@@ -1,6 +1,8 @@
-# ![Yaw](yaw-logo.svg)
+# ![Yaw](https://rawgit.com/CHEPROXIMITY/Yaw/master/yaw-logo.svg)
 
 Yaw turns a figure into a horizontally pannable scene using canvas and an image sequence.
+
+Try the [demo](https://rawgit.com/CHEPROXIMITY/Yaw/master/demo/demo.html).
 
 ## Browser support
 
