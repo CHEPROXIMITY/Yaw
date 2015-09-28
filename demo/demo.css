@@ -1,0 +1,62 @@
+body {
+  margin: 1em;
+  text-align: center;
+  font: 18px sans-serif;
+}
+
+.yaw {
+  vertical-align: middle;
+  margin: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.yaw button {
+  right: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(50%, 50%);
+      -ms-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.yaw .progress {
+  display: none;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  width: 25%;
+  height: 2px;
+  -webkit-transform: translate(50%, 50%);
+      -ms-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.yaw .progress div {
+  width: 0;
+  height: inherit;
+  background-color: #C00;
+}
+
+.yaw figcaption {
+  max-width: 100%;
+  bottom: 10%;
+  right: 50%;
+  opacity: .6;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  transition: opacity 0.8s;
+}
+
+.yaw.loading .progress {
+  display: block;
+}
+
+.yaw.loaded .progress {
+  display: none;
+}
+
+.yaw.panning figcaption {
+  transition-duration: .4s;
+}

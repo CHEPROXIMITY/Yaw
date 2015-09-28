@@ -1,0 +1,68 @@
+//------------------------------------------------ Yaw
+
+// Core styles.
+
+.yaw {
+  display: inline-block;
+  position: relative; // Contain components
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  canvas {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  button {
+    position: absolute;
+  }
+  figcaption {
+    display: none;
+    position: absolute;
+  }
+
+//------------------------------------------------ Yaw: Loading
+
+  &.loading {
+    cursor: wait;
+    button {
+      display: none;
+    }
+  }
+
+//------------------------------------------------ Yaw: Loaded
+
+  &.loaded {
+    user-select: none;
+    cursor: move;
+    cursor: grab;
+    img {
+      opacity: 0;
+    }
+    canvas {
+      display: block;
+    }
+    figcaption {
+      display: block;
+    }
+    button {
+      display: none;
+    }
+  }
+
+//------------------------------------------------ Yaw: Panning
+
+  &.panning {
+    cursor: all-scroll;
+    cursor: grabbing;
+    figcaption {
+      opacity: 0;
+      transition-duration: .4s;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Yaw demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../yaw.css" />
+    <link rel="stylesheet" href="demo.css" />
+    <script src="https://cdn.rawgit.com/paulirish/1579671/raw/682e5c880c92b445650c4880a6bf9f3897ec1c5b/rAF.js"></script>
+    <script src="../yaw.js"></script>
+    <script src="demo.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="https://github.com/CHEPROXIMITY/Yaw"><img src="../yaw-logo.svg" alt="Yaw logo" /></a>
+    </header>
+    <figure class="yaw" data-path="frames/" data-format="png" data-frames="30" data-frame="15">
+      <img src="frames/15.png" width="1000" alt="Demo scene" />
+      <canvas></canvas>
+      <figcaption>Drag to rotate</figcaption>
+      <button>Load 360°</button>
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-valuemax="100"><div></div></div>
+    </figure>
+  </body>
+</html>

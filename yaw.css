@@ -1,0 +1,73 @@
+.yaw {
+  display: inline-block;
+  position: relative;
+}
+
+.yaw img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.yaw canvas {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yaw button {
+  position: absolute;
+}
+
+.yaw figcaption {
+  display: none;
+  position: absolute;
+}
+
+.yaw.loading {
+  cursor: wait;
+}
+
+.yaw.loading button {
+  display: none;
+}
+
+.yaw.loaded {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.yaw.loaded img {
+  opacity: 0;
+}
+
+.yaw.loaded canvas {
+  display: block;
+}
+
+.yaw.loaded figcaption {
+  display: block;
+}
+
+.yaw.loaded button {
+  display: none;
+}
+
+.yaw.panning {
+  cursor: all-scroll;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.yaw.panning figcaption {
+  opacity: 0;
+  transition-duration: .4s;
+}

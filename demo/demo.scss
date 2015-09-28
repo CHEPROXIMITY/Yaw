@@ -1,0 +1,70 @@
+//------------------------------------------------ Global
+
+body {
+  margin: 1em;
+  text-align: center;
+  font: 18px sans-serif;
+}
+
+//------------------------------------------------ Yaw
+
+// Customization.
+
+.yaw {
+  vertical-align: middle;
+  margin: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, .08);
+  button {
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+  }
+  .progress {
+    display: none;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    width: 25%;
+    height: 2px;
+    transform: translate(50%, 50%);
+    background-color: rgba(0, 0, 0, .4);
+    div {
+      width: 0;
+      height: inherit;
+      background-color: #C00;
+    }
+  }
+  figcaption {
+    max-width: 100%;
+    bottom: 10%;
+    right: 50%;
+    opacity: .6;
+    transform: translateX(50%);
+    transition: opacity .8s;
+  }
+
+//------------------------------------------------ Yaw: Loading
+
+  &.loading {
+    .progress {
+      display: block;
+    }
+  }
+
+//------------------------------------------------ Yaw: Loaded
+
+  &.loaded {
+    .progress {
+      display: none;
+    }
+  }
+
+//------------------------------------------------ Yaw: Panning
+
+  &.panning {
+    figcaption {
+      transition-duration: .4s;
+    }
+  }
+}
